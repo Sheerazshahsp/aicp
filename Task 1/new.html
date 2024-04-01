@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+        <form action="connect.php" method="post" class="form" >
+            <div class="first">
+                <div class="details personal">
+                     <span class="title">Personal Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" name="birth" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="mobileNumber">Mobile Number</label>
+                            <input type="number" name="mobile" placeholder="Enter mobile number" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="gender">Gender</label>
+                            <select name="gender" required>
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label for="occupation">Occupation</label>
+                            <input type="text" name="occupation" placeholder="Enter your occupation" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="idType">ID Type</label>
+                            <input type="text" name="id" placeholder="Enter your ID type" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="idNumber">ID Number</label>
+                            <input type="text" name="idnu" placeholder="Enter your ID number" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="issueAuthority">Issued Authority</label>
+                            <input type="text" name="issueauthority" placeholder="Enter issued authority" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="issueState">Issued State</label>
+                            <input type="text" name="issuestate" placeholder="Enter issued state" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="issueDate">Issued Date</label>
+                            <input type="date" name="issue" required>
+                        </div>
+                        <div class="input-field">
+                            <label for="expiryDate">Expiry Date</label>
+                            <input type="date" name="expiry" required>
+                        </div>
+                    </div>
+                    <button class="nextBtn">Next</button>
+                </div>
+            </div>
+            <div class="second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
+                    <div class="fields">
+                        <!-- Add address fields here -->
+                    </div>
+                </div>
+                <div class="details family">
+                    <span class="title">Family Details</span>
+                    <div class="fields">
+                        <!-- Add family details fields here -->
+                    </div>
+                    <div class="buttons">
+                        <button class="prevBtn">Prev</button>
+                        <button class="nextBtn">Next</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
